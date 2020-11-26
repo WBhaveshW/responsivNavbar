@@ -1,0 +1,155 @@
+*{
+    margin : 0;
+    padding: 0;
+}
+.nav-container{
+    font-family: var(--bolded-font);
+    display:flex;
+    width: 100vw;
+    background: tomato;
+    /* flex-direction: column; */
+
+}
+.nav-left{
+    /* background: yellow; */
+    display: flex;
+    align-items: center;
+    margin: var(--nav-margin) 15px;
+}
+.nav-left .company-logo img{
+    height:40px;
+    width:40px;
+    border-radius: 50%;
+    display: flex;
+    margin: 0 10px;    
+}
+.nav-left .company-name{
+    margin-left: 10px;
+    font-size: 22px;
+    text-shadow:var(--texts-shadow);
+}
+
+.nav-right{
+    /* background-color: pink; */
+    display: flex;
+    align-items: center;
+    width: 80vw;
+    justify-content: flex-end;
+}
+.nav-right ul{
+    list-style: none;
+    display: flex;
+}
+.nav-right ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-right ul li .form-box input[type=text]{
+     width: 35vw;
+     height: 5vh;
+     font-family: var(--bolded-font);
+     border: 2px solid coral;
+     border-radius: 5px;
+     padding-left:10px ;
+}
+.nav-right ul li .form-box input[type=text]:focus{
+    border-color: indianred;
+}
+.nav-right ul li .form-box i{
+    position: relative;
+    top: 2px;
+    left: -30px;
+    cursor: pointer;
+}
+
+.nav-right ul li .cart-box {
+    width: 5vw;
+    height: 5vh;
+    /* border: 2px solid teal; */
+    border-radius: 5px;
+    align-items: center;
+}
+
+.nav-right li .cart-box {
+    display: flex;
+    align-items: center;
+}
+.nav-right li .cart-box a{
+    display: flex;
+    align-items: center;
+}
+.cart-box .cart-name{
+    margin-right: 5px;
+    text-shadow:var(--texts-shadow);
+
+}
+/* .nav-right li .cart-box .cartlogo {
+    text-shadow:var(--texts-shadow);
+} */
+.hamburger{
+    display: flex;
+    align-items: center;
+    color:white;
+    font-size: 12px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 4px 6px;
+    background-color: gray;
+    
+}
+
+/* side nav bar styling starts here */
+.side-navbar-container{
+    background-color: rgb(218, 84, 61);
+    /* max-width: 15vw; */
+    width:20%;
+    height: 100vh;
+    overflow: none;
+    font-family: var(--bolded-font);
+    display: none;
+    position: absolute;
+    /* transition: 4s;
+    animation-timing-function:ease-in; */
+}
+.side-navbar-container:target{
+    transition: 5s;
+}
+.side-navbar-top{
+    /* background-color: pink; */
+    display: flex;
+    justify-content: flex-end;
+}
+.side-navbar-close-btn{
+    /* font-size: 12px; */
+    color:white;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 0px 7px;
+    background-color: gray;
+}
+
+.side-navbar-bottom ul li{
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    margin: 8px 10%;
+}
+.side-navbar-bottom ul {
+    list-style:none ;
+}
+.side-navbar-bottom ul li a{
+    text-decoration: none;
+    color: black;
+    text-shadow:var(--texts-shadow);
+
+}
+.side-nav-hr-width{
+    width: 80%;
+    margin: auto;
+    border: 1px solid gray;
+    border-radius: 2px;
+}
+/* side nav bar styling ends here */

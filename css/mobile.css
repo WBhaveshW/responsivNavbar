@@ -1,0 +1,40 @@
+@media screen and (max-width:650px){
+    .nav-container{
+        flex-direction: column;
+    }
+    .nav-right{
+        width: 100vw;
+        justify-content: center;
+        margin-bottom: var(--nav-margin);
+    }
+    .nav-right ul li .form-box input[type=text]{
+        width: 60vw;
+    }
+    .cart-box .cart-name{
+        margin-right: 1px;
+    }
+    .nav-right li .form-box i{
+        font-size:15px !important;
+    }
+    .hamburger{
+        font-size:12px !important;
+    }
+    .side-navbar-container{
+        width:50%;
+    }
+}
+@media screen and (max-width:1200px) and (min-width:650px){
+    .nav-right{
+        width: 70vw;
+    }
+    .side-navbar-container{
+        width:30%;
+    }
+
+}
+
+@media screen and (max-width:800px) and (min-width:650px){
+    .nav-right{
+        width: 60vw;
+    }
+}
